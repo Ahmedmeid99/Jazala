@@ -294,15 +294,14 @@ nav ul {
     transition: color 0.3s;
 }
 
-.nav-link.active {
+.nav-link.active,
+.nav-link:hover {
     color: var(--gold);
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--gold);
+    transition: var(--transition);
 }
 
-nav ul li .nav-link:hover {
-    color: var(--gold-light);
-}
 
 .theme-toggle {
     background: none;
