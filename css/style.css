@@ -1002,7 +1002,8 @@ body.dark-mode .loader {
     background-color: var(--text-light);
 }
 
-body.dark-mode p {
+body.dark-mode p,
+body.dark-mode li {
     color: #444;
 }
 
