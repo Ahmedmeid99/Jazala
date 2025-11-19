@@ -21,7 +21,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 60px;
 }
 
 body {
@@ -574,6 +574,23 @@ button:hover {
     background: var(--gold-dark);
 }
 
+.form-policy-note {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 15px;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.form-policy-note a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.form-policy-note a:hover {
+    color: var(--gold-light);
+}
 
 
 
@@ -890,6 +907,9 @@ body.dark-mode .copy-right {
 /* ================================= */
 
 @media (max-width:600px) {
+    html {
+        scroll-padding-top: 90px;
+    }
 
     .navbar {
         overflow: hidden;
@@ -926,7 +946,8 @@ body.dark-mode .copy-right {
     }
 
     .section-title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
     }
 
     .services,
@@ -942,6 +963,10 @@ body.dark-mode .copy-right {
 
     .about-container {
         gap: 10px;
+    }
+
+    .about-image img {
+        min-height: auto !important;
     }
 
     .about-text {
