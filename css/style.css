@@ -900,6 +900,8 @@ body.dark-mode .copy-right {
 
     nav ul {
         padding-bottom: 1rem;
+        padding: 5px;
+        gap: 10px;
     }
 
     nav ul .nav-link {
@@ -911,12 +913,16 @@ body.dark-mode .copy-right {
         padding: 40px 20px;
     }
 
+    .hero h1 {
+        font-size: 2rem;
+    }
+
     .hero-bg {
         transition: background-image 1.5s ease-in-out;
     }
 
     .hero-buttons {
-        font-size: .8rem;
+        font-size: 12px;
     }
 
     .section-title {
