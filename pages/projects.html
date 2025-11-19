@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/fav.png" type="image/x-icon">
+    <!-- includ google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- includ fontawsoom -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- includ css project file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- includ animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Jazala – Project Management</title>
+    <!-- includ google font (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-image">
+            <img src="../images/logo.png" alt="Loading...">
+        </div>
+    </div>
+
+    <!-- Scroll Button -->
+    <div class="scroll-btn center">
+        <i class="fa-solid fa-arrow-up "></i>
+    </div>
+    <!-- Header -->
+    <header class=" header">
+        <div class="navbar">
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="">
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" class="nav-link">About Us</a></li>
+                    <li><a href="./services.html" class="nav-link">Services</a></li>
+                    <li><a href="./projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="page">
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <h2 class="section-title">Our Projects at a Glance</h2>
+
+            <!-- Filters -->
+            <div class="filters">
+                <select id="statusFilter">
+                    <option value="all">All Status</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                    <option value="upcoming">Upcoming</option>
+                </select>
+
+                <select id="sectorFilter">
+                    <option value="all">All Sectors</option>
+                    <option value="infrastructure">Infrastructure</option>
+                    <option value="energy">Energy</option>
+                    <option value="consultancy">Consultancy</option>
+                </select>
+
+                <select id="regionFilter">
+                    <option value="all">All Regions</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="north-africa">North Africa</option>
+                </select>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="projects">
+                <div class="project-card" data-status="completed" data-sector="infrastructure" data-region="egypt">
+                    <a href="#"><i class="fa-solid fa-city"></i> New Cairo Infrastructure
+                        Development</a>
+                    <p><i class="fa-solid fa-circle-check"></i> 80% Complete – Deadline: Q2 2026</p>
+                </div>
+
+                <div class="project-card" data-status="upcoming" data-sector="infrastructure" data-region="egypt">
+                    <a href="#"><i class="fa-solid fa-train-subway"></i> Alexandria Metro Expansion</a>
+                    <p><i class="fa-solid fa-clipboard-list"></i> In Planning – JV with global engineering partner</p>
+                </div>
+
+                <div class="project-card" data-status="active" data-sector="energy" data-region="north-africa">
+                    <a href="#"><i class="fa-solid fa-solar-panel"></i> North Africa Renewable Energy
+                        Hub</a>
+                    <p><i class="fa-solid fa-leaf"></i> Ongoing – Sustainability Flagship</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Logo -->
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="/images/jazala-logo.png" alt="Jazala Logo">
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="footer-links">
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <!-- Policy Links -->
+                <div class="footer-policies">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="return.html">Return & Refund Policy</a>
+                    <a href="delivery.html">Delivery Policy</a>
+                    <a href="cancellation.html">Cancellation Policy</a>
+                </div>
+
+                <!-- Description -->
+                <p class="footer-title">
+                    Jazala – Driving Sustainable Growth Through Project Management.
+                </p>
+
+                <!-- Copyright -->
+                <span class="copy-right">
+                    © <span id="current-year"></span> Jazala. All rights reserved.
+                </span>
+
+            </div>
+        </footer>
+    </div>
+    <!-- bootstrap  -->
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- font awsome -->
+    <script src="../js/all.min.js"></script>
+    <!-- ##### -->
+    <script src="../js/app.js"></script>
+    <!-- animation  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        try {
+            AOS.init({
+                duration: 1000,
+            });
+        } catch (error) {
+            console.log(error.message)
+        }
+    </script>
+</body>
