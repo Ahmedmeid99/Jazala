@@ -986,6 +986,10 @@ body.dark-mode .copy-right {
         flex-direction: column;
     }
 
+    .contact-details {
+        flex-direction: column;
+    }
+
 
     .sm-reverse {
         display: flex;
