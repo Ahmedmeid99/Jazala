@@ -899,9 +899,9 @@ body.dark-mode .copy-right {
     }
 
     nav ul {
-        padding-bottom: 1rem;
-        padding: 5px;
+        padding: 0 5px 15px 0;
         gap: 10px;
+        margin: 0 auto;
     }
 
     nav ul .nav-link {
