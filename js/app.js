@@ -40,38 +40,40 @@ if (scrollBtn) {
 //----------------------------------------
 // Hero Section
 //----------------------------------------
-const heroSection = document.getElementById("-hero-bg");
-if (heroSection) {
-    const heroImages = [
-        "images/hero3.jpg",
-        "images/hero5.jpg",
-        "images/hero6.jpg",
-    ];
 
-    let current = 0;
-    const loadedImages = heroImages.map(src => {
-        const img = new Image();
-        img.src = src;
-        return img;
-    });
+// old
+// const heroSection = document.getElementById("-hero-bg");
+// if (heroSection) {
+//     const heroImages = [
+//         "images/hero3.jpg",
+//         "images/hero5.jpg",
+//         "images/hero6.jpg",
+//     ];
 
-    function changeHeroImage() {
-        heroSection.style.backgroundImage = `url('${loadedImages[current].src}')`;
-        heroSection.style.backgroundSize = "cover";
-        heroSection.style.backgroundPosition = "center";
-        heroSection.style.backgroundRepeat = "no-repeat";
-        current = (current + 1) % loadedImages.length;
-    }
+//     let current = 0;
+//     const loadedImages = heroImages.map(src => {
+//         const img = new Image();
+//         img.src = src;
+//         return img;
+//     });
 
-    changeHeroImage();
-    setInterval(changeHeroImage, 5000);
-}
+//     function changeHeroImage() {
+//         heroSection.style.backgroundImage = `url('${loadedImages[current].src}')`;
+//         heroSection.style.backgroundSize = "cover";
+//         heroSection.style.backgroundPosition = "center";
+//         heroSection.style.backgroundRepeat = "no-repeat";
+//         current = (current + 1) % loadedImages.length;
+//     }
 
-const vid = document.getElementById("heroVideo");
-if (vid) {
-    vid.playbackRate = 0.3; // Slow down to 50%
+//     changeHeroImage();
+//     setInterval(changeHeroImage, 5000);
+// }
 
-}
+// const vid = document.getElementById("heroVideo");
+// if (vid) {
+//     vid.playbackRate = 0.3; // Slow down to 50%
+
+// }
 
 //----------------------------------------
 // Loader
@@ -93,25 +95,47 @@ if (yearElement) {
 // Dark Mode Toggle
 //----------------------------------------
 const themeToggle = document.getElementById("theme-toggle");
+const logos = document.querySelectorAll(".img-logo"); // all logos
+
 if (themeToggle) {
-    // Load saved mode
+
+    // ===== Load saved mode =====
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode");
+
+        logos.forEach(logo => {
+            logo.src = "/images/logos/01Jazala_BI_.png"; // dark logo
+        });
+
+    } else {
+        logos.forEach(logo => {
+            logo.src = "/images/logos/03Jazala_BI_.png"; // light logo
+        });
     }
 
+    // ===== Toggle click =====
     themeToggle.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
 
-        // Save preference
-        if (document.body.classList.contains("dark-mode")) {
-            localStorage.setItem("theme", "dark");
-        } else {
-            localStorage.setItem("theme", "light");
-        }
+        const isDark = document.body.classList.contains("dark-mode");
 
-        // Optional: switch icon
+        // Save mode
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        // Change all logos
+        logos.forEach(logo => {
+            logo.src = isDark
+                ? "/images/logos/01Jazala_BI_.png"   // dark
+                : "/images/logos/03Jazala_BI_.png";  // light
+        });
+
+        // Switch icon
         const icon = themeToggle.querySelector("i");
-        icon.classList.toggle("fa-moon");
-        icon.classList.toggle("fa-sun");
+        if (icon) {
+            icon.classList.toggle("fa-moon");
+            icon.classList.toggle("fa-sun");
+        }
     });
 }
+
+

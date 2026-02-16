@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/jazala-logo.png" type="image/x-icon">
-    <!-- includ google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ===================== FONTS ====================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!--
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Cairo:wght@400;700&display=swap"
+        rel="stylesheet"> -->
     <!-- includ fontawsoom -->
     <link rel="stylesheet" href="../css/all.min.css">
     <!-- includ css project file -->
@@ -19,7 +25,7 @@
     <!-- includ animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Jazala – Project Management</title>
+    <title>Jazala – Services</title>
     <!-- includ google font (Cairo) -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
@@ -27,12 +33,7 @@
 </head>
 
 <body>
-    <!-- Loader -->
-    <div id="loader" class="loader">
-        <div class="loader-image">
-            <img src="../images/jazala-logo.png" alt="Loading...">
-        </div>
-    </div>
+
 
     <!-- Scroll Button -->
     <div class="scroll-btn center">
@@ -43,7 +44,7 @@
         <div class="navbar">
             <a href="../index.html">
                 <div class="logo">
-                    <img src="../images/jazala-logo.png" alt="">
+                    <img class="img-logo" src="../images/logos/01Jazala_BI_.png" alt="">
                 </div>
             </a>
             <nav>
@@ -154,6 +155,20 @@
                     </p>
                 </div>
 
+                <div class="service-card" data-aos="fade-up">
+                    <h3>
+                        <div class="icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        Business Consulting &amp; Professional Development
+                    </h3>
+                    <p>
+                        Integrated consulting and professional development services delivering training programs,
+                        courses, and workshops across multiple sectors and industries, serving individuals and
+                        organizations across a wide range of professional disciplines.
+                    </p>
+                </div>
+
             </div>
         </section>
 
@@ -164,7 +179,7 @@
                 <!-- Logo -->
                 <div class="footer-logo">
                     <a href="#">
-                        <img src="/images/jazala-logo.png" alt="Jazala Logo">
+                        <img class="img-logo" src="/images/logos/01Jazala_BI_.png" alt="Jazala Logo">
                     </a>
                 </div>
 
@@ -185,9 +200,7 @@
                 </div>
 
                 <!-- Description -->
-                <p class="footer-title">
-                    Jazala – Driving Sustainable Growth Through Project Management.
-                </p>
+                <p class="footer-title">Jazala – Empowering Business Development and Project Delivery.</p>
 
                 <!-- Copyright -->
                 <span class="copy-right">
@@ -200,11 +213,9 @@
     <!-- bootstrap  -->
     <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
     <!-- EmailJS -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <!-- font awsome -->
     <script src="../js/all.min.js"></script>
     <!-- ##### -->
-    <script src="../js/app.js"></script>
     <!-- animation  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -216,4 +227,5 @@
             console.log(error.message)
         }
     </script>
+    <script src="../js/app.js"></script>
 </body>

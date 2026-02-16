@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/jazala-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logos/01Jazala_ICON_.png" type="image/x-icon">
 
-    <!-- Include Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ===================== FONTS ====================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!--
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Cairo:wght@400;700&display=swap"
+        rel="stylesheet"> -->
 
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="../css/all.min.css">
@@ -23,19 +29,14 @@
     <!-- Include AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Jazala – Project Management</title>
+    <title>Jazala – About</title>
 
     <!-- Include Google Font (Cairo) -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Loader -->
-    <div id="loader" class="loader">
-        <div class="loader-image">
-            <img src="../images/jazala-logo.png" alt="Loading...">
-        </div>
-    </div>
+
 
     <!-- Scroll Button -->
     <div class="scroll-btn center">
@@ -47,7 +48,7 @@
         <div class="navbar">
             <a href="../index.html">
                 <div class="logo">
-                    <img src="/images/jazala-logo.png" alt="Jazala Logo">
+                    <img class="img-logo" src="/images/logos/01Jazala_BI_.png" alt="Jazala Logo">
                 </div>
             </a>
             <nav>
@@ -74,24 +75,30 @@
 
             <div class="about-container">
                 <div class="about-image" data-aos="fade-right">
-                    <img src="/images/img2.png" loading="lazy" alt="About Jazala">
+                    <img src="/images/about-2.jpg" loading="lazy" alt="About Jazala">
                 </div>
                 <div class="about-text" data-aos="fade-left">
                     <!-- <h2 class="about-title">We are <strong>Jazala</strong></h2> -->
                     <h2 class="about-title">Jazala</h2>
 
                     <p>
-                        Jazala is a specialized company providing administrative, technical, and logistical support
-                        services, as well as procurement solutions, to businesses, developers, suppliers, and
-                        contractors across the Middle East.
-                        Jazala empowers its clients and partners to execute their transactions and projects with higher
-                        efficiency and quality by offering integrated solutions that include business management,
-                        on-site supervision and support, resource and material provision, and ensuring seamless
-                        operations in line with industry best practices and professional standards.
+                        Jazala is a specialized company providing integrated business consulting, professional
+                        development, administrative, technical, and logistical support services, in addition to
+                        procurement and resource solutions, to businesses, developers, suppliers, contractors, and
+                        individuals across the Middle East.
 
-                        Jazala is committed to building long-term relationships with its clients by delivering reliable
-                        and fast services tailored to meet the needs of development sectors in the region—creating added
-                        value and enhancing the success of businesses and projects. </p>
+                        Jazala supports its clients and partners in executing their transactions, projects, and
+                        organizational initiatives with higher efficiency and quality through a comprehensive service
+                        portfolio that includes business consulting and professional development services, delivering
+                        training programs, courses, and workshops across multiple sectors and industries, alongside
+                        project and operational advisory, on-site supervision and support, resource and material
+                        provision, and supply chain coordination.
+
+                        By integrating consulting, capability development, and operational support, Jazala ensures
+                        seamless, compliant, and high-quality execution aligned with industry best practices and
+                        professional standards. Jazala is committed to building long-term partnerships by delivering
+                        reliable, agile, and tailored solutions that create sustainable value and enhance the success of
+                        businesses, projects, and professionals across the region. </p>
                 </div>
             </div>
 
@@ -104,7 +111,7 @@
                 <!-- Logo -->
                 <div class="footer-logo">
                     <a href="#">
-                        <img src="/images/jazala-logo.png" alt="Jazala Logo">
+                        <img class="img-logo" src="/images/logos/01Jazala_BI_.png" alt="Jazala Logo">
                     </a>
                 </div>
 
@@ -125,9 +132,7 @@
                 </div>
 
                 <!-- Description -->
-                <p class="footer-title">
-                    Jazala – Driving Sustainable Growth Through Project Management.
-                </p>
+                <p class="footer-title">Jazala – Empowering Business Development and Project Delivery.</p>
 
                 <!-- Copyright -->
                 <span class="copy-right">
@@ -139,9 +144,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="../js/all.min.js"></script>
-    <script src="../js/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         try {
@@ -150,6 +153,7 @@
             console.log(error.message);
         }
     </script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
